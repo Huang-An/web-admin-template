@@ -1,0 +1,4 @@
+// 修复 vxe table tooltip 层级bug
+.vxe-table--tooltip-wrapper.theme--dark {
+  z-index: 123456 !important;
+}

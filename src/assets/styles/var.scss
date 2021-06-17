@@ -1,0 +1,31 @@
+$--const-white: #ffffff;
+$--const-red: #f56c6c;
+$--const-blur: #1890ff;
+$--const-black: #000000d9;
+$--const-green: #008250;
+$--const-coffee: #303133;
+$--const-gray-light: #767676;
+$--const-gray-darker: #606266;
+$--const-white-light: #f8f8f9;
+$--const-white-darker: #fafafa;
+$--const-gray-1: #9b9b9b;
+$--const-gray-2: #ebeef5;
+
+$--const-font-color: $--const-black;
+
+// 页面主题色
+$--const-primary: $--const-blur;
+// 菜单背景色
+$--const-sidebar-background-color: $--const-white;
+// 菜单字体颜色
+$--const-sidebar-text-color: $--const-font-color;
+// 菜单字体颜色
+$--const-sidebar-active-text-color: $--const-blur;
+// 菜单宽度
+$--const-sidebar-width: 210px;
+
+:export {
+  sidebarBackgroundColor: $--const-sidebar-background-color;
+  sidebarTextColor: $--const-sidebar-text-color;
+  sidebarActiveTextColor: $--const-sidebar-active-text-color;
+}

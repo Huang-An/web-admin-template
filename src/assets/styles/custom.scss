@@ -1,0 +1,18 @@
+.custom-width__full {
+  width: 100% !important;
+}
+
+.custom-primary__color {
+  color: $--const-primary;
+}
+
+.custom-clear__fix {
+  &:before,
+  &:after {
+    display: table;
+    content: '';
+  }
+  &:after {
+    clear: both;
+  }
+}

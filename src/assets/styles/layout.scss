@@ -1,0 +1,135 @@
+.app-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: $--const-white;
+}
+
+// 左边区域
+.app-wrapper__left {
+  position: fixed;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1001;
+  transition: width 0.28s;
+  box-shadow: 2px 0 8px 0 rgba(29, 35, 41, 0.05);
+  width: $--const-sidebar-width;
+  background: $--const-white;
+
+  .inside-sidebar__wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .el-scrollbar {
+      flex: 1 1 0%;
+    }
+
+    a {
+      display: inline-block;
+      width: 100%;
+      overflow: hidden;
+    }
+
+    .el-menu {
+      border: none;
+      height: 100%;
+      width: 100%;
+
+      .el-menu-item.is-active {
+        position: relative;
+        background: #e6f7ff !important;
+        .sidebar-menu__icon {
+          color: $--const-sidebar-active-text-color;
+        }
+      }
+
+      .el-submenu.is-active {
+        .el-submenu__title {
+          color: $--const-sidebar-active-text-color !important;
+          .sidebar-menu__icon {
+            color: $--const-sidebar-active-text-color;
+          }
+        }
+      }
+
+      .el-menu-item.is-active::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        border-right: 3px solid $--const-primary;
+      }
+
+      .sidebar-menu__icon {
+        font-size: 16px;
+        margin-right: 16px;
+        color: $--const-font-color;
+      }
+    }
+  }
+}
+
+// 右边区域
+.app-wrapper__right {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  transition: margin-left 0.28s;
+  margin-left: $--const-sidebar-width;
+  background: $--const-white-light;
+}
+
+.app-sidebar__hide {
+  .app-wrapper__left {
+    width: 50px !important;
+
+    .el-submenu {
+      overflow: hidden;
+      .el-submenu__icon-arrow {
+        display: none;
+      }
+    }
+
+    .el-menu--collapse {
+      .el-submenu {
+        .el-submenu__title {
+          span {
+            height: 0;
+            width: 0;
+            overflow: hidden;
+            visibility: hidden;
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+
+  .app-wrapper__right {
+    margin-left: 50px;
+  }
+}
+
+.el-menu--vertical {
+  & > .el-menu {
+    .sidebar-menu__icon {
+      font-size: 16px;
+      margin-right: 16px;
+    }
+  }
+}
+
+// 表格全屏
+.table-mail-full {
+  .inside-main__body {
+    position: fixed !important;
+    z-index: 2000 !important;
+    padding: 0 !important;
+    background: $--const-white !important;
+  }
+}

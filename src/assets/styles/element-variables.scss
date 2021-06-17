@@ -1,0 +1,14 @@
+// element 自定义主题颜色
+$--color-primary: $--const-primary;
+
+// button
+$--button-border-radius: 2px;
+$--button-medium-border-radius: 2px;
+
+// tag
+$--tag-border-radius: 2px;
+
+/* icon font path, required */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import '~element-ui/packages/theme-chalk/src/index';
