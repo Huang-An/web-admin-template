@@ -39,9 +39,9 @@ import { loginResult } from 'api/user/type'
 import { ElForm } from 'element-ui/types/form'
 
 @Component({
-  name: 'normalLogin'
+  name: 'NormalLogin'
 })
-export default class normalLogin extends Vue {
+export default class NormalLogin extends Vue {
   @Ref('form') formRef!: ElForm
 
   @Action('user/setAuthToken') setAuthToken!: (data: loginResult) => void

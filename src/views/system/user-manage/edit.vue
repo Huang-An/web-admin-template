@@ -39,9 +39,9 @@ import { ElForm } from 'element-ui/types/form'
 type routeQuery = { id: string }
 
 @Component({
-  name: 'userManageEdit'
+  name: 'UserManageEdit'
 })
-export default class userManageEdit extends Mixins<mixinForm, mixinDetail<routeQuery>>(mixinForm, mixinDetail) {
+export default class UserManageEdit extends Mixins<mixinForm, mixinDetail<routeQuery>>(mixinForm, mixinDetail) {
   @Ref('form') formRef!: ElForm
 
   form: updateParams = {

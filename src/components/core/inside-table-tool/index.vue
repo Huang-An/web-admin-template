@@ -41,12 +41,12 @@ import { Getter } from 'vuex-class'
 import fullScreen from '../inside-full-screen/index.vue'
 
 @Component({
-  name: 'insideTableTool',
+  name: 'InsideTableTool',
   components: {
     fullScreen
   }
 })
-export default class insideTableTool extends Vue {
+export default class InsideTableTool extends Vue {
   @Getter('user/buttonMap') buttonMap!: { [k: string]: button }
 
   /**

@@ -29,9 +29,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component({
-  name: 'tableCell'
+  name: 'TableCell'
 })
-export default class tableCell extends Vue {
+export default class TableCell extends Vue {
   /**
    * 渲染 table cell 的配置
    */

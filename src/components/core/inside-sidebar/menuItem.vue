@@ -3,9 +3,9 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 import { CreateElement, VNode } from 'vue'
 
 @Component({
-  name: 'menuItem'
+  name: 'MenuItem'
 })
-export default class menuItem extends Vue {
+export default class MenuItem extends Vue {
   /**
    * 菜单项图标
    */

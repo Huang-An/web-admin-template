@@ -35,9 +35,9 @@ import { updateParams } from 'api/user/type'
 import { ElForm } from 'element-ui/types/form'
 
 @Component({
-  name: 'userManageAdd'
+  name: 'UserManageAdd'
 })
-export default class userManageAdd extends Mixins(mixinForm) {
+export default class UserManageAdd extends Mixins(mixinForm) {
   @Ref('form') formRef!: ElForm
 
   form: updateParams = {

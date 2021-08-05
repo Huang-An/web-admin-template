@@ -19,9 +19,9 @@ import { Action, Getter } from 'vuex-class'
 import { sizeMap } from 'enums/appEnums'
 
 @Component({
-  name: 'sizeSelect'
+  name: 'SizeSelect'
 })
-export default class sizeSelect extends Vue {
+export default class SizeSelect extends Vue {
   @Action('app/setAppSize') actionSetAppSize!: (size: string) => void
   @Action('view/delAllCacheViews') actionDelAllCacheViews!: () => Promise<void>
   @Getter('app/appSize') appSize!: string

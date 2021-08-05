@@ -27,9 +27,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component({
-  name: 'comDialog'
+  name: 'ComDialog'
 })
-export default class comDialog extends Vue {
+export default class ComDialog extends Vue {
   // 取消按钮文字
   @Prop({ type: String, default: '取 消' }) readonly cancelBtnText!: string
   // 确认按钮文字

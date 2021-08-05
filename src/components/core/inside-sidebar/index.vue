@@ -24,12 +24,12 @@ import styles from 'assets/styles/var.scss'
 import sidebarItem from './sidebarItem.vue'
 
 @Component({
-  name: 'insideSidebar',
+  name: 'InsideSidebar',
   components: {
     sidebarItem
   }
 })
-export default class insideSidebar extends Vue {
+export default class InsideSidebar extends Vue {
   @Getter('app/sidebarStatus') sidebarStatus!: boolean
   @Getter('user/menuList') menuList!: Array<menu>
 

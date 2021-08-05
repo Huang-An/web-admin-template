@@ -13,9 +13,9 @@ import { Vue, Component, Watch } from 'vue-property-decorator'
 import { RouteRecord } from 'vue-router'
 
 @Component({
-  name: 'breadcrumb'
+  name: 'Breadcrumb'
 })
-export default class breadcrumb extends Vue {
+export default class Breadcrumb extends Vue {
   levelList: Array<RouteRecord> = []
 
   @Watch('$route')

@@ -8,9 +8,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component({
-  name: 'comPageWrapper'
+  name: 'ComPageWrapper'
 })
-export default class comPageWrapper extends Vue {
+export default class ComPageWrapper extends Vue {
   /**
    * body style
    */

@@ -8,7 +8,7 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
-  name: 'reply'
+  name: 'Reply'
 })
-export default class reply extends Vue {}
+export default class Reply extends Vue {}
 </script>

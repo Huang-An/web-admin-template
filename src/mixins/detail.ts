@@ -2,15 +2,13 @@ import { Vue, Component } from 'vue-property-decorator'
 import { isEqualWith } from 'lodash'
 
 @Component({
-  name: 'mixinsDetail'
+  name: 'MixinsDetail'
 })
-export default class mixinsDetail<Q = { [k: string]: any }> extends Vue {
+export default class MixinsDetail<Q = { [k: string]: any }> extends Vue {
   /**
-   * 判断组件是否已经初始化，不要重复定义
-   * 开启了router cache 的页面 第一次进来会依次执行 activated mounted。
-   * 为了避免重复执行请求，需要在 activated 时将其设为 true。在 mounted时，延迟执行。判断为 true 就不进行请求数据
+   * 判断是否被 router cache
    */
-  public componentInit = false
+  public isKeepAliveCache = false
 
   // 获取详情查询条件
   public routeQuery: Q = {} as Q
@@ -35,12 +33,16 @@ export default class mixinsDetail<Q = { [k: string]: any }> extends Vue {
 
   public mounted() {
     this.$nextTick(() => {
-      !this.componentInit && this.init()
+      if (this.isKeepAliveCache) return
+
+      this.init()
     })
   }
 
   public activated() {
-    this.componentInit = true
+    // 如果进入了该钩子，标记是被 keep-alive 缓存的组件
+    this.isKeepAliveCache = true
+
     this.init()
   }
 }

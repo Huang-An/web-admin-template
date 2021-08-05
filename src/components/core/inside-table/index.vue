@@ -54,12 +54,12 @@ import tableCell from './cell.vue'
 import { ElTable } from 'element-ui/types/table'
 
 @Component({
-  name: 'insideTable',
+  name: 'InsideTable',
   components: {
     tableCell
   }
 })
-export default class insideTable extends Vue {
+export default class InsideTable extends Vue {
   @Ref('table') tableRef!: ElTable
 
   @Getter('user/buttonMap') buttonMap!: { [k: string]: button }

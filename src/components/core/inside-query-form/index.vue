@@ -110,9 +110,9 @@ import { Getter } from 'vuex-class'
 import { cloneDeep } from 'lodash'
 
 @Component({
-  name: 'insideQueryForm'
+  name: 'InsideQueryForm'
 })
-export default class insideQueryForm extends Vue {
+export default class InsideQueryForm extends Vue {
   @Getter('app/sidebarStatus') sidebarStatus!: boolean
 
   /**

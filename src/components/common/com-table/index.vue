@@ -47,7 +47,7 @@ const defaultColumnOptions = {
 }
 
 @Component({
-  name: 'comTable',
+  name: 'ComTable',
   components: {
     insideQueryForm,
     insideTableTool,
@@ -55,7 +55,7 @@ const defaultColumnOptions = {
     insidePagination
   }
 })
-export default class comTable extends Vue {
+export default class ComTable extends Vue {
   /**
    * 表格数据，同 el-table data
    */

@@ -9,9 +9,9 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 import screenfull, { Screenfull } from 'screenfull'
 
 @Component({
-  name: 'insideFullScreen'
+  name: 'InsideFullScreen'
 })
-export default class insideFullScreen extends Vue {
+export default class InsideFullScreen extends Vue {
   /**
    * 组件渲染标签
    */

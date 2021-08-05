@@ -1,9 +1,9 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
-  name: 'mixinsForm'
+  name: 'MixinsForm'
 })
-export default class mixinsForm extends Vue {
+export default class MixinsForm extends Vue {
   public loading: boolean = false
 
   public async startSubmit(): Promise<void> {

@@ -22,9 +22,9 @@
 import { Vue, Component } from 'vue-property-decorator'
 
 @Component({
-  name: 'error403'
+  name: 'Error403'
 })
-export default class error403 extends Vue {
+export default class Error403 extends Vue {
   backHome() {
     this.$router.push({ path: '/home' })
   }

@@ -18,7 +18,7 @@ import { Vue, Component } from 'vue-property-decorator'
 import { Getter } from 'vuex-class'
 
 @Component({
-  name: 'layout',
+  name: 'Layout',
   components: {
     insideSidebar,
     insideNavbar,
@@ -26,7 +26,7 @@ import { Getter } from 'vuex-class'
     insideTagView
   }
 })
-export default class layout extends Vue {
+export default class Layout extends Vue {
   @Getter('app/sidebarStatus') sidebarStatus!: boolean
 
   get layoutClass() {

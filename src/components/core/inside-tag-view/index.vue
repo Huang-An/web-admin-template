@@ -43,9 +43,9 @@ interface affixTagsInterface {
 }
 
 @Component({
-  name: 'insideTagView'
+  name: 'InsideTagView'
 })
-export default class insideTagView extends Vue {
+export default class InsideTagView extends Vue {
   @Action('view/addView') actionAddView!: (data: Route) => Promise<any>
   @Action('view/addTagsView') actionAddTagsView!: (data: affixTagsInterface) => Promise<any>
   @Action('view/delView') actionDelView!: (data: Route) => Promise<{ tagsViews: Array<Route> }>

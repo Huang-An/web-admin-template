@@ -24,9 +24,9 @@ import { Getter, Action } from 'vuex-class'
 import avatar from 'assets/images/avatar.jpg'
 
 @Component({
-  name: 'userAvatar'
+  name: 'UserAvatar'
 })
-export default class userAvatar extends Vue {
+export default class UserAvatar extends Vue {
   @Getter('user/userName') userName!: string
   @Action('user/loginOut') actionLoginOut!: () => Promise<any>
   @Action('app/cleanSettings') actionCleanSettings!: () => void

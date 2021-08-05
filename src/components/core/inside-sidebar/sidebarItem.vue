@@ -34,13 +34,13 @@ import menuItem from './menuItem.vue'
 const path = require('path')
 
 @Component({
-  name: 'sidebarItem',
+  name: 'SidebarItem',
   components: {
     appLink,
     menuItem
   }
 })
-export default class sidebarItem extends Vue {
+export default class SidebarItem extends Vue {
   /**
    * 菜单数据
    */

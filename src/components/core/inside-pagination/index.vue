@@ -15,9 +15,9 @@
 import { Vue, Component, Prop, Watch } from 'vue-property-decorator'
 
 @Component({
-  name: 'insidePagination'
+  name: 'InsidePagination'
 })
-export default class insidePagination extends Vue {
+export default class InsidePagination extends Vue {
   /**
    * 总条数 同 el-pagination total
    */

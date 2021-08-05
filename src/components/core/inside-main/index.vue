@@ -17,9 +17,9 @@ import { Vue, Component } from 'vue-property-decorator'
 import { Getter } from 'vuex-class'
 
 @Component({
-  name: 'insideMain'
+  name: 'InsideMain'
 })
-export default class insideMain extends Vue {
+export default class InsideMain extends Vue {
   @Getter('view/cacheViews') cacheViews!: Array<string>
 
   get key() {

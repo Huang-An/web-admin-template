@@ -20,15 +20,15 @@ import { dateFormat } from 'plugin/helper'
 import { list } from 'api/user'
 
 // mixins
-import mixinTable from 'mixins/table'
+import createMixinsTable from 'mixins/table'
 
 // type
 import { listSearch, listItems } from 'api/user/type'
 
 @Component({
-  name: 'userManage'
+  name: 'UserManage'
 })
-export default class userManage extends Mixins<mixinTable<listSearch>>(mixinTable) {
+export default class UserManage extends Mixins(createMixinsTable<listSearch>()) {
   data: Array<listItems> = []
 
   query: query<listSearch> = {

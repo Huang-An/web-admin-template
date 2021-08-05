@@ -10,9 +10,9 @@ import { Vue, Component, Prop } from 'vue-property-decorator'
 import { external } from '@const-an/regexp'
 
 @Component({
-  name: 'appLink'
+  name: 'AppLink'
 })
-export default class appLink extends Vue {
+export default class AppLink extends Vue {
   @Prop({ type: String, required: true }) to!: string
 
   linkProps(url: string) {

@@ -6,9 +6,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component({
-  name: 'comIcon'
+  name: 'ComIcon'
 })
-export default class comIcon extends Vue {
+export default class ComIcon extends Vue {
   /**
    * 图标名称 详细见 fontawesome
    */

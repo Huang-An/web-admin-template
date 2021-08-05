@@ -37,9 +37,9 @@
 import { Vue, Component, Prop } from 'vue-property-decorator'
 
 @Component({
-  name: 'comFormWrapper'
+  name: 'ComFormWrapper'
 })
-export default class comFormWrapper extends Vue {
+export default class ComFormWrapper extends Vue {
   @Prop({ type: Boolean, default: false }) readonly loading!: boolean
   // 是否需要底部
   @Prop({ type: Boolean, default: true }) readonly showFooter!: boolean

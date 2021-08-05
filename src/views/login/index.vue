@@ -16,12 +16,12 @@ import { Vue, Component } from 'vue-property-decorator'
 import normalLogin from './normal/index.vue'
 
 @Component({
-  name: 'login',
+  name: 'Login',
   components: {
     normalLogin
   }
 })
-export default class login extends Vue {
+export default class Login extends Vue {
   loginType: string = 'normalLogin'
 }
 </script>

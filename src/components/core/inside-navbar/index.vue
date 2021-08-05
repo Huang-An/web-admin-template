@@ -29,7 +29,7 @@ import userAvatar from './userAvatar.vue'
 import reply from './reply.vue'
 
 @Component({
-  name: 'insideNavbar',
+  name: 'InsideNavbar',
   components: {
     toggleSidebar,
     breadcrumb,
@@ -39,7 +39,7 @@ import reply from './reply.vue'
     reply
   }
 })
-export default class insideNavbar extends Vue {}
+export default class InsideNavbar extends Vue {}
 </script>
 
 <style lang="scss" scoped>

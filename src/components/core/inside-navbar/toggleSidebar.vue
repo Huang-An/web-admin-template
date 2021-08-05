@@ -9,9 +9,9 @@ import { Vue, Component } from 'vue-property-decorator'
 import { Action, Getter } from 'vuex-class'
 
 @Component({
-  name: 'toggleSidebar'
+  name: 'ToggleSidebar'
 })
-export default class toggleSidebar extends Vue {
+export default class ToggleSidebar extends Vue {
   @Getter('app/sidebarStatus') sidebarStatus!: boolean
   @Action('app/toggleSidebar') actionToggleSidebar!: () => void
 

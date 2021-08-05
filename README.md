@@ -1,29 +1,13 @@
 # web-admin
 
-## 启动
+一个基于 Vue@2.6、typescript、element 简洁的后台管理系统模板。
+
+使用：
+
+```shell
+
+npm i @const-an/cli -g
+
+const-an-cli create my-admin
 
 ```
-yarn install
-```
-
-### Compiles and hot-reloads for development
-
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-
-```
-yarn build
-```
-
-### Lints and fixes files
-
-```
-yarn lint
-```
-
-### Customize configuration
-
-See [Configuration Reference](https://cli.vuejs.org/config/).

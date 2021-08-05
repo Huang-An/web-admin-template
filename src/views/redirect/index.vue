@@ -4,9 +4,9 @@ import { CreateElement, VNode } from 'vue'
 import { cloneDeep } from 'lodash'
 
 @Component({
-  name: 'redirect'
+  name: 'Redirect'
 })
-export default class redirect extends Vue {
+export default class Redirect extends Vue {
   created() {
     const query = cloneDeep(this.$route.query)
     const { fullPath } = query
